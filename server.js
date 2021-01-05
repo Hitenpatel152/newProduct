@@ -20,13 +20,10 @@ require('./database/db');
 
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/views'));
-// app.use(express.static(path.join(__dirname + '/views/js')));
-// app.use(express.static(path.join(__dirname + '/js')));
+
 
 app.use('/controller/productController/images', express.static(path.join(__dirname, 'controller/productController/images')));
-// app.use('/controller/productController/images',express.static(path.join(__dirname + 'controller/productController/images')));
 
-// app.use('/views/js', express.static(path.join(__dirname, 'views/js')));
 const UserRoute = require('./routes/UserRoute/user');
 
 //routes...
